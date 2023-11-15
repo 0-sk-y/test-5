@@ -2,6 +2,10 @@
 
 :root {
   --gradient-1: linear-gradient(rgb(0,0,0), rgb(58,58,58));
+  --gradient-1-inv: linear-gradient(rgb(58,58,58), rgb(0,0,0));
+  --gradient-1-50: linear-gradient(rgba(0,0,0,.5), rgba(58,58,58,.5));
+  --gradient-2: linear-gradient(rgb(0,0,0), rgb(58,58,58), rgb(0,0,0));
+  --gradient-2-50: linear-gradient(rgba(0,0,0,.5), rgba(58,58,58,.5), rgba(0,0,0,.5));
 }
 
 /*? └────────────────────────────────────────┘ */
@@ -66,8 +70,92 @@ video {
 .footer {
   position: relative;
   overflow: hidden;
-  background-image: var(--gradient-1);
 }
 
 /*? └────────────────────────────────────────┘ */
 
+.int {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  border: 1px solid grey;
+}
+
+/** ┌──────────────────GC────────────────────┐ */
+
+/*┌─────────────────Header──────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+.header {
+    background-image: var(--gradient-1-inv);
+}
+
+.header .int:nth-child(1) {
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 50%;
+  height: 200%;
+  border-radius: 7rem;
+  background-image: var(--gradient-1-inv);
+}
+
+
+/*┌───────────────────L─────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+._left {
+  background-image: var(--gradient-1);
+}
+
+/*┌──────────────────c-1────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+.c-1 {
+  background-image: var(--gradient-1);
+}
+
+/*┌──────────────────c-2────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+.c-2 {
+  background-image: var(--gradient-1);
+}
+
+/*┌──────────────────c-3────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+.c-3 {
+  background-image: var(--gradient-1);
+}
+
+/*┌──────────────────c-4────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+.c-4 {
+  background-image: var(--gradient-1);
+}
+
+/*┌────────────────────R────────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+._right {
+  background-image: var(--gradient-1);
+}
+
+/*┌─────────────────Footer──────────────────┐ 
+  └─────────────────────────────────────────┘*/
+
+  .footer {
+    background-image: var(--gradient-1-inv);
+  }
+
+  .footer .int:nth-child(1) {
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 50%;
+    height: 200%;
+    border-radius: 7rem;
+    background-image: var(--gradient-1);
+  }
+
+/** └────────────────────────────────────────┘ */
