@@ -2,7 +2,7 @@
 
 :root {
 
-  /* ➞➞➞➞➞ gradients ➞➞➞➞➞ */
+  /*? ➞➞➞➞➞ gradients ➞➞➞➞➞ */
   
   --gradient-1: linear-gradient(rgb(0,0,0), rgb(58,58,58));
   --gradient-1-inv: linear-gradient(rgb(58,58,58), rgb(0,0,0));
@@ -78,7 +78,7 @@ video {
 
 /*? └────────────────────────────────────────┘ */
 
-/* -> int <- */
+/** -> int <- */
 
 .int {
   position: absolute;
@@ -207,9 +207,15 @@ video {
     background-image: var(--gradient-1-inv);
 }
 
-/* ┌─────int───────┐ */
+/*? ┌─────int───────┐ */
 
 .header .int:nth-child(1) {
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+}
+
+.header .int:nth-child(2) {
   left: 50%;
   transform: translate(-50%, 10%);
   width: 50%;
@@ -218,7 +224,7 @@ video {
   background-image: var(--gradient-1-inv);
 }
 
-.header .int:nth-child(2) {
+.header .int:nth-child(3) {
   left: -5%;
   width: 12%;
   height: 100%;
@@ -226,7 +232,7 @@ video {
   transform: skew(45deg);
 }
 
-.header .int:nth-child(3) {
+.header .int:nth-child(4) {
   right: -5%;
   width: 12%;
   height: 100%;
@@ -234,7 +240,34 @@ video {
   transform: skew(-45deg);
 }
 
-/* └───────────────┘ */
+.header .int:nth-child(5) {
+  width: 10%;
+  height: 25%;
+  left: 12%;
+  top: 37%;
+  border-radius: 1.5rem;
+  background-image: var(--gradient-1);
+}
+
+.header .int:nth-child(6) {
+  width: 10%;
+  height: 25%;
+  right: 12%;
+  top: 37%;
+  border-radius: 1.5rem;
+  background-image: var(--gradient-1);
+}
+
+.header .int:nth-child(7) {
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 2rem;
+  top: -35%;
+  background-image: var(--gradient-1);
+}
+
+/*? └───────────────┘ */
 
 /*┌───────────────────L─────────────────────┐ 
   └─────────────────────────────────────────┘*/
@@ -337,9 +370,14 @@ video {
     background-image: var(--gradient-1-inv);
   }
 
-  /* ┌─────int───────┐ */
+  /*? ┌─────int───────┐ */
 
   .footer .int:nth-child(1) {
+    width: 100%;
+    height: 50%;
+  }
+
+  .footer .int:nth-child(2) {
     left: 50%;
     transform: translate(-50%, -60%);
     width: 50%;
@@ -348,7 +386,7 @@ video {
     background-image: var(--gradient-1);
   }
 
-  .footer .int:nth-child(2) {
+  .footer .int:nth-child(3) {
     left: -5%;
     width: 12%;
     height: 100%;
@@ -356,7 +394,7 @@ video {
     transform: skew(-45deg);
   }
   
-  .footer .int:nth-child(3) {
+  .footer .int:nth-child(4) {
     right: -5%;
     width: 12%;
     height: 100%;
@@ -364,6 +402,33 @@ video {
     transform: skew(45deg);
   }
 
-  /* └───────────────┘ */
+  .footer .int:nth-child(5) {
+    width: 10%;
+    height: 25%;
+    left: 12%;
+    top: 37%;
+    border-radius: 1.5rem;
+    background-image: var(--gradient-1);
+  }
+  
+  .footer .int:nth-child(6) {
+    width: 10%;
+    height: 25%;
+    right: 12%;
+    top: 37%;
+    border-radius: 1.5rem;
+    background-image: var(--gradient-1);
+  }
+
+  .footer .int:nth-child(7) {
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 2rem;
+    bottom: -35%;
+    background-image: var(--gradient-1-inv);
+  }
+
+  /*? └───────────────┘ */
 
 /** └────────────────────────────────────────┘ */
