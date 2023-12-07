@@ -384,6 +384,15 @@ video {
   background-image: var(--gradient-2);
 }
 
+.header .int:nth-child(9) {
+  width: 35%;
+  height: 200%;
+  left: 50%;
+  transform: translate(-50%, 35%);
+  border-radius: 4rem;
+  background-image: var(--gradient-2);
+}
+
 /*? └───────────────┘ */
 
 /*┌───────────────────L─────────────────────┐ 
@@ -655,7 +664,16 @@ video {
     transform: translate(-50%, -70%);
     border-radius: 5rem;
     background-image: var(--gradient-2);
-  }   
+  }
+  
+  .footer .int:nth-child(9) {
+    width: 35%;
+    height: 200%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    border-radius: 4rem;
+    background-image: var(--gradient-2);
+  }
 
   /*? └───────────────┘ */
 
